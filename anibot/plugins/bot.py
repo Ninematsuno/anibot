@@ -657,4 +657,20 @@ async def terminal(client: anibot, message: Message, mdata: dict):
         await message.reply_text("**Output:**\n`No Output`")
 
 
+
+def main():
+
+    if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
+        try:
+            dispatcher.bot.sendMessage("@aimi_support", "[MINATO IS BACK ONLINE⚡](https://telegra.ph/file/c7f5e04471db60e0c8ea1.mp4)",parse_mode = ParseMode.MARKDOWN ),
+
+        except Unauthorized:
+            LOGGER.warning(
+                "Bot isnt able to send message to SUPPORT_CHAT, go and check!"
+            )
+        except BadRequest as e:
+            LOGGER.warning(e.message)
+
+
+
 ##########################################################################
