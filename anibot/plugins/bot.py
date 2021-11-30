@@ -377,10 +377,12 @@ async def start_(client: anibot, message: Message, mdata: dict):
                 return
         await client.send_message(
             gid,
-            text=f"""Kon'nichiwa!!!
-I'm {bot.first_name} bot and I can help you get info on Animes, Mangas, Characters, Airings, Schedules, Watch Orders of Animes, etc
-For more info send /help in here [.](https://telegra.ph/file/e074fa6a6b4ff5f414cc6.jpg)
-If you wish to use me in a group start me by /start{BOT_NAME} command after adding me in the group."""
+            text=f"""Kᴏɴ'ɴɪᴄʜɪᴡᴀ
+≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
+ɪ'ᴍ  {bot.first_name}  ᴀɴᴅ ɪ ᴄᴀɴ ʜᴇʟᴘ ʏᴏᴜ ɢᴇᴛ ɪɴғᴏ ᴏɴ ᴀɴɪᴍᴇs, ᴍᴀɴɢᴀ, ᴄʜᴀʀᴀᴄᴛᴇʀs, ᴀɪʀɪɴɢs, sʜᴇᴅᴜʟᴇs, ᴡᴀᴛᴄʜ ᴏʀᴅᴇʀs ᴏғ ᴀɴɪᴍᴇs ᴇᴛᴄ 
+ ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
+ғᴏʀ ᴍᴏʀᴇ ɪɴғᴏ sᴇɴᴅ /help ɪɴ ʜᴇʀᴇ
+[ㅤ](https://telegra.ph/file/e074fa6a6b4ff5f414cc6.jpg)"""
         )
     else:
         if not await (GROUPS.find_one({"id": gid})):
