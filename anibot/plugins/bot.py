@@ -379,7 +379,7 @@ async def start_(client: anibot, message: Message, mdata: dict):
             gid,
             text=f"""Kon'nichiwa!!!
 I'm {bot.first_name} bot and I can help you get info on Animes, Mangas, Characters, Airings, Schedules, Watch Orders of Animes, etc
-For more info send /help in here.
+For more info send /help in here [.](https://telegra.ph/file/e074fa6a6b4ff5f414cc6.jpg)
 If you wish to use me in a group start me by /start{BOT_NAME} command after adding me in the group."""
         )
     else:
